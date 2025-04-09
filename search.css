@@ -1,0 +1,138 @@
+/* Styles for search components */
+
+/* Autocomplete suggestions container */
+.autocomplete-suggestions {
+    position: absolute;
+    width: 100%;
+    max-height: 300px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    display: none;
+  }
+  
+  /* Suggestions list */
+  .suggestions-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual suggestion item */
+  .suggestion-item {
+    padding: 10px 15px;
+    cursor: pointer;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .suggestion-item:last-child {
+    border-bottom: none;
+  }
+  
+  .suggestion-item:hover {
+    background-color: #f0f7ff;
+  }
+  
+  /* Search results container */
+  .search-results-container {
+    position: absolute;
+    width: 100%;
+    max-height: 500px;
+    overflow-y: auto;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 5px;
+    z-index: 999;
+    display: none;
+  }
+  
+  /* Results list */
+  .results-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  /* Individual result item */
+  .result-item {
+    padding: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .result-item:last-child {
+    border-bottom: none;
+  }
+  
+  .result-item:hover {
+    background-color: #f5f5f5;
+  }
+  
+  /* Book information styling */
+  .book-title {
+    margin: 0 0 10px 0;
+    color: #0066cc;
+    font-size: 18px;
+  }
+  
+  .book-details {
+    font-size: 14px;
+  }
+  
+  .book-author {
+    margin: 5px 0;
+  }
+  
+  .book-description {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .book-location {
+    margin: 5px 0;
+    color: #555;
+  }
+  
+  .book-category {
+    display: inline-block;
+    padding: 3px 8px;
+    background-color: #e0f0ff;
+    color: #0066cc;
+    border-radius: 12px;
+    font-size: 12px;
+    margin-top: 5px;
+  }
+  
+  /* No results message */
+  .no-results {
+    padding: 15px;
+    text-align: center;
+    color: #666;
+  }
+  
+  /* Custom dropdown styling to match your design */
+  .search-label {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 8px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 500;
+  }
+  
+  .dropdown-menu {
+    border-radius: 4px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dropdown-item {
+    padding: 8px 15px;
+  }
+  
+  .dropdown-item:hover {
+    background-color: #f0f7ff;
+  }

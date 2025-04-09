@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NST E-Library</title>
+    <link rel="stylesheet" href="Religion.Css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+
+<!-- Search Results Page Template for Subject Categories -->
+<div class="search-results-container">
+    <!-- Right Content - Search Results -->
+    <div class="results-content">
+      <div class="results-header">
+        <h2><span id="totalResults">85</span> results for "Religion"</h2>
+        <div class="results-controls">
+          <select class="sort-by">
+            <option>Sort by relevance</option>
+            <option>Sort by date</option>
+            <option>Sort by title</option>
+          </select>
+          <select class="per-page" id="itemsPerPage">
+            <option value="3">3 per page</option>
+            <option value="5">5 per page</option>
+            <option value="10" selected>10 per page</option>
+          </select>
+        </div>
+      </div>
+      
+      <!-- Results List -->
+      <div class="results-list" id="bookResults">
+        <!-- Books will be loaded here by JavaScript -->
+      </div>
+      
+      <!-- Pagination Controls -->
+      <div class="pagination" id="paginationControls">
+        <!-- Pagination buttons will be generated here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="ReligionDatabase.js"></script>
+  <script src="ReligionPagination.js"></script>
+</body>
+</html>

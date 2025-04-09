@@ -1,0 +1,196 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>NST Library</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="stylesheet" href="search.css">
+  </head>
+  <body> 
+    <nav class="navbar bg-body-tertiary">
+        <div class="container">
+          <a class="navbar-brand" href="https://nst.edu.ph/admissions/">
+           <h7> Nova Schola Tanauan </h7>
+          </a>
+        </div>
+    </nav>
+
+    <div class="container-fluid bg-info py-3">
+        <div class="container">
+          <!-- header -->
+          <div class="text-white mb-2">Nova Schola Tanauan</div>
+          
+          <div class="d-flex justify-content-between align-items-center mb-3">
+            <h2 class="text-white">NST | College Library</h2>
+        
+            <div>
+              <a href="#" class="text-white me-3">My Account</a>
+              <a href="#" class="text-white">Feedback</a>
+            </div>
+          </div>
+          
+          <!-- Search bar section with correct IDs -->
+          <div class="d-flex align-items-center mb-3">
+            <div class="dropdown me-2">
+              <button class="btn btn-info dropdown-toggle text-white" type="button" id="searchDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                Search all
+              </button>
+              <ul class="dropdown-menu" aria-labelledby="searchDropdown">
+                <li><a class="dropdown-item" href="#">Catalog</a></li>
+                <li><a class="dropdown-item" href="#">Articles</a></li>
+                <li><a class="dropdown-item" href="#">Website</a></li>
+              </ul>
+            </div>
+            
+            <div class="input-group search-input-container position-relative" style="flex: 1;">
+              <input type="text" class="form-control" id="search-input" placeholder="catalog + articles + website + more" aria-label="Search">
+              <button class="btn btn-outline-light" type="button" id="search-button">
+                <i class="bi bi-search">Search</i>
+              </button>
+              <div id="autocomplete-suggestions" class="autocomplete-suggestions"></div>
+            </div>
+          </div>
+        </div>
+    </div>
+      
+    <!-- Help section -->
+    <div class="container-fluid bg-secondary py-2">
+        <div class="container">
+          <a href="#" class="text-white text-decoration-none">Help ▸</a>
+        </div>
+    </div>
+      
+    <!-- Search results container -->
+    <div id="search-results" class="search-results-container container mt-3"></div>
+      
+    <!-- Main content -->
+    <main id="main-content" class="container mt-4">
+        <!-- Breadcrumbs -->
+        <div class="breadcrumbs mb-4">
+            <span>" Search all covers all these sources "</span>
+        </div>
+
+        <div class="container">
+            <div class="row">
+            
+                <div class="col-md-3">  
+                    <div class="card mb-4" style="width: 100%; height: 420px;">
+                      <img src="images/academixs.jpg" class="card-img-top" alt="Academics" style="height: 180px; object-fit: cover;">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Academics</h5>
+                        <p class="card-text" style="height: 120px; overflow: hidden;">This section features academic subjects such as Mathematics, Science, Etc.</p>
+                        <a href="Academics Books/academics.html" class="btn btn-primary mt-auto">View</a>
+                      </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3">  
+                    <div class="card mb-4" style="width: 100%; height: 420px;">
+                      <img src="images/Financials.jpeg" class="card-img-top" alt="Financials" style="height: 180px; object-fit: cover;">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Financials</h5>
+                        <p class="card-text" style="height: 120px; overflow: hidden;">Explore insights into managing finances, investments, and economic principles crucial for personal and professional financial success.</p>
+                        <a href="Financial Books/Financial.html" class="btn btn-primary mt-auto">View</a>
+                      </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3">  
+                    <div class="card mb-4" style="width: 100%; height: 420px;">
+                      <img src="images/technology.jpg" class="card-img-top" alt="technology" style="height: 180px; object-fit: cover;">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Technology</h5>
+                        <p class="card-text" style="height: 120px; overflow: hidden;">Find books about gadgets, computers, the internet, and new tech that's changing the way we live and work.</p>
+                        <a href="Technology Books/Technology.html" class="btn btn-primary mt-auto">View</a>
+                      </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3">  
+                    <div class="card mb-4" style="width: 100%; height: 420px;">
+                      <img src="images/fiction.jpeg" class="card-img-top" alt="fiction" style="height: 180px; object-fit: cover;">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Fiction</h5>
+                        <p class="card-text" style="height: 120px; overflow: hidden;">Enjoy stories from different genres—mystery, romance, adventure, fantasy, and more.</p>
+                        <a href="Fiction/Fiction.Html" class="btn btn-primary mt-auto">View</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+              
+            <div class="row">
+                <div class="col-md-3">  
+                    <div class="card mb-4" style="width: 100%; height: 420px;">
+                      <img src="images/filipiniana.jpg" class="card-img-top" alt="filipiniana" style="height: 180px; object-fit: cover;">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Thesis</h5>
+                        <p class="card-text" style="height: 120px; overflow: hidden;">A collection of books about the Philippines—its history, culture, people, and traditions.</p>
+                        <a href="Filipiniana Books/Filipiniana.html" class="btn btn-primary mt-auto">View</a>
+                      </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3">  
+                    <div class="card mb-4" style="width: 100%; height: 420px;">
+                      <img src="images/religion.jpg" class="card-img-top" alt="religion" style="height: 180px; object-fit: cover;">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Religion</h5>
+                        <p class="card-text" style="height: 120px; overflow: hidden;">This section mostly features Christian books about faith, the Bible, prayer, and living a spiritual life.</p>
+                        <a href="Religion Books/Religion.html" class="btn btn-primary mt-auto">View</a>
+                      </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3">  
+                    <div class="card mb-4" style="width: 100%; height: 420px;">
+                      <img src="images/self growth.png" class="card-img-top" alt="Self-Growth" style="height: 180px; object-fit: cover;">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Self Growth</h5>
+                        <p class="card-text" style="height: 120px; overflow: hidden;">Books that help you grow as a person—build confidence, improve habits, and live a better life.</p>
+                        <a href="SelfGrowthBooks/Selfgrowth.html" class="btn btn-primary mt-auto">View</a>
+                      </div>
+                    </div>
+                </div>
+              
+                <div class="col-md-3">  
+                    <div class="card mb-4" style="width: 100%; height: 420px;">
+                      <img src="images/What is criminology.jpg" class="card-img-top" alt="criminology" style="height: 180px; object-fit: cover;">
+                      <div class="card-body d-flex flex-column">
+                        <h5 class="card-title">Criminology</h5>
+                        <p class="card-text" style="height: 120px; overflow: hidden;">Explore topics about crime, criminals, and how the justice system works.</p>
+                        <a href="Criminology books/criminology.html" class="btn btn-primary mt-auto">View</a>
+                      </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer style="background-color: #0fc0d4; padding: 15px 0; color: white; width: 100%;">
+        <div class="container-fluid">
+            <div style="display: flex; justify-content: space-between; align-items: center; padding: 0 15px;">
+               
+                <div style="display: flex; align-items: center;">
+                    <div style="width: 50px; height: 50px; background-color: rgb(255, 255, 255); border-radius: 50%; margin-right: 15px; display: flex; justify-content: center; align-items: center; overflow: hidden;">
+                        <img src="images/logo-removebg-preview.png" alt="NST Logo" style="max-width: 100%; max-height: 100%;">
+                    </div>
+                    <span style="font-size: 18px;">Nova Schola Tanauan Library</span>
+                </div>
+
+                <div style="text-align: right;">
+                    <p style="margin: 2px 0;"><strong>Hours:</strong> Mon-Fri: 8:00 AM - 5:00 PM</p>
+                    <p style="margin: 2px 0;"><strong>Location:</strong> Building C 2nd Floor</p>
+                    <p style="margin: 2px 0;"><a href="#" style="color: white; text-decoration: none;">Contact Us</a></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="allbooks.js"></script>
+    <script src="search.js"></script>
+  </body>
+</html>
